@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Showcase</title>
+<style>
+
+  #product-gallery{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Style for product images and thumbnails */
+  .product-image {
+    display: none;
+    width: 37.5rem;
+    height: 31.25rem;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+  }
+  .shoe{
+    display: flex;
+    flex-direction: row;
+  }
+  .pro{
+    width: 41%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .imginfo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    width: 59%;
+  }
+  .product-image img{
+    width: 200px;
+    height: 200px;
+  }
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 5px;
+    border: 2px solid black; /* Add border to thumbnails */
+  }
+</style>
+</head>
+<body>
+
+<h1>Product Showcase</h1>
+
+<div id="product-gallery">
+  <!-- Thumbnails -->
+  <div id="thumbnail-container">
+    <!-- books Images -->
+    <h2>Books:-</h2>
+    <img class="thumbnail" src="images/510186bmxkL._SY445_SX342_.jpg" alt="Product 1" onclick="showProduct(1)">
+    <img class="thumbnail" src="images/51uKPulIKRL._SY445_SX342_.jpg" alt="Product 2" onclick="showProduct(2)">
+    <img class="thumbnail" src="images/81EbIhhjCxL._SY425_.jpg" alt="Product 3" onclick="showProduct(3)">
+    <img class="thumbnail" src="images/shopping (1).webp" alt="Product 4" onclick="showProduct(4)">
+    <img class="thumbnail" src="images/shopping.webp" alt="Product 5" onclick="showProduct(5)">
+    <!-- Add more thumbnails as needed -->
+
+    <!-- Clothes Images -->
+    <h2>Clothes:-</h2>
+    <img class="thumbnail" src="images/clothes1.webp" alt="Product 6" onclick="showProduct(6)">
+    <img class="thumbnail" src="images/clothes2.webp" alt="Product 7" onclick="showProduct(7)">
+    <img class="thumbnail" src="images/clothes3.webp" alt="Product 8" onclick="showProduct(8)">
+    <img class="thumbnail" src="images/clothes4.webp" alt="Product 9" onclick="showProduct(9)">
+    <img class="thumbnail" src="images/clothes5.webp" alt="Product 10" onclick="showProduct(10)">
+    <!-- Add more thumbnails as needed -->
+
+    <!-- Shoes Images -->
+    <h2>Shoes:-</h2>
+    <img class="thumbnail" src="images/shoes1.webp" alt="Product 6" onclick="showProduct(11)">
+    <img class="thumbnail" src="images/shoes2.webp" alt="Product 7" onclick="showProduct(12)">
+    <img class="thumbnail" src="images/shoes3.webp" alt="Product 8" onclick="showProduct(13)">
+    <img class="thumbnail" src="images/shoes4.webp" alt="Product 9" onclick="showProduct(14)">
+    <img class="thumbnail" src="images/shoes5.webp" alt="Product 10" onclick="showProduct(15)">
+    <!-- Add more thumbnails as needed -->
+  </div>
+
+  <!-- Product Images -->
+  <div class="product" id="product-images">
+    <div class="product-image" id="product1">
+      <div class="shoe">
+        <div class="pro">
+    <img src="images/510186bmxkL._SY445_SX342_.jpg" alt="Product1">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+    </div>
+
+    <div class="product-image" id="product2">
+      <div class="shoe">
+        <div class="pro">
+    <img src="images/51uKPulIKRL._SY445_SX342_.jpg" alt="Product2">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+    </div>
+
+    <div class="product-image" id="product3">
+      <div class="shoe">
+        <div class="pro">
+    <img src="images/81EbIhhjCxL._SY425_.jpg" alt="product3">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+    </div>
+
+    <div class="product-image" id="product4">
+      <div class="shoe">
+        <div class="pro">
+    <img src="images/shopping (1).webp" alt="product4">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+    </div>
+
+    <div class="product-image" id="product5">
+      <div class="shoe">
+        <div class="pro">
+    <img src="images/shopping.webp" alt="product5">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+    </div>
+    <!-- Add more product images as needed -->
+
+    <!-- Clothes Images -->
+    <div class="product-image" id="product6">
+      <div class="shoe">
+        <div class="pro">
+    <img src="images/clothes1.webp" alt="Product6">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+  </div>
+
+  <div class="product-image" id="product7">
+    <div class="shoe">
+      <div class="pro">
+    <img src="images/clothes2.webp" alt="Product7">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+  </div>
+
+  <div class="product-image" id="product8">
+    <div class="shoe">
+      <div class="pro">
+    <img src="images/clothes3.webp" alt="product8">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+  </div>
+
+  <div class="product-image" id="product9">
+    <div class="shoe">
+      <div class="pro">
+    <img src="images/clothes4.webp" alt="product9">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+  </div>
+
+  <div class="product-image" id="product10">
+    <div class="shoe">
+      <div class="pro">
+    <img src="images/clothes5.webp" alt="product10">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+        </div>
+        <div class="imginfo">
+          <h4><u>Description</u>:-</h4>
+          <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+          <h4><u>Product Details</u>:-</h4>
+          <ul>
+            <li><b>Material typePolyvinyl -</b> Chloride</li>
+            <li><b>Closure type -</b> Chloride</li>
+            <li><b>Heel type -</b> Lorem.</li>
+            <li><b>Water resistance level -</b> Lorem.</li>
+            <li><b>Sole material -</b> lorem1</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+            <li><b>Lorem, ipsum. -</b> Lorem.</li>
+          </ul>
+      </div>
+  </div>
+  </div>
+    <!-- Add more product images as needed -->
+
+    <!-- Shoes Images -->
+    <div class="product-image" id="product11">
+      <div class="shoe">
+      <div class="pro">
+        <img src="images/shoes1.webp" alt="Product11">
+        <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+           
+  </div>
+    <div class="imginfo">
+      
+      <h4><u>Description</u>:-</h4>
+      <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+      <h4><u>Product Details</u>:-</h4>
+      <ul>
+        <li><b>Material typePolyvinyl -</b> Chloride</li>
+        <li><b>Closure type -</b> Chloride</li>
+        <li><b>Heel type -</b> Lorem.</li>
+        <li><b>Water resistance level -</b> Lorem.</li>
+        <li><b>Sole material -</b> lorem1</li>
+        <li><b>Lorem, ipsum. -</b> Lorem.</li>
+        <li><b>Lorem, ipsum. -</b> Lorem.</li>
+      </ul>
+    
+  </div>
+    </div>
+  </div>
+  
+  <div class="product-image" id="product12">
+    <div class="shoe">
+      <div class="pro">
+    <img  src="images/shoes2.webp" alt="Product12">
+    <h3><u>Price &#8377 2,299</u></h3>
+        <h2><u>KALENJI</u></h2>
+        <h4>Men Running Shoes Run Active - Blue</h4>
+  </div>
+  <div class="imginfo">
+      
+    <h4><u>Description</u>:-</h4>
+    <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+    <h4><u>Product Details</u>:-</h4>
+    <ul>
+      <li><b>Material typePolyvinyl -</b> Chloride</li>
+      <li><b>Closure type -</b> Chloride</li>
+      <li><b>Heel type -</b> Lorem.</li>
+      <li><b>Water resistance level -</b> Lorem.</li>
+      <li><b>Sole material -</b> lorem1</li>
+      <li><b>Lorem, ipsum. -</b> Lorem.</li>
+      <li><b>Lorem, ipsum. -</b> Lorem.</li>
+    </ul>
+</div>
+  </div>
+  </div>
+
+  <div class="product-image" id="product13">
+    <div class="shoe">
+      <div class="pro">
+    <img  src="images/shoes3.webp" alt="product13">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+    </div>
+    <div class="imginfo">
+      <h4><u>Description</u>:-</h4>
+      <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+      <h4><u>Product Details</u>:-</h4>
+      <ul>
+        <li><b>Material typePolyvinyl -</b> Chloride</li>
+        <li><b>Closure type -</b> Chloride</li>
+        <li><b>Heel type -</b> Lorem.</li>
+        <li><b>Water resistance level -</b> Lorem.</li>
+        <li><b>Sole material -</b> lorem1</li>
+        <li><b>Lorem, ipsum. -</b> Lorem.</li>
+        <li><b>Lorem, ipsum. -</b> Lorem.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="product-image" id="product14">
+    <div class="shoe">
+      <div class="pro">
+    <img src="images/shoes4.webp" alt="product14">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+  </div>
+  <div class="imginfo">
+    <h4><u>Description</u>:-</h4>
+    <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+    <h4><u>Product Details</u>:-</h4>
+    <ul>
+      <li><b>Material typePolyvinyl -</b> Chloride</li>
+      <li><b>Closure type -</b> Chloride</li>
+      <li><b>Heel type -</b> Lorem.</li>
+      <li><b>Water resistance level -</b> Lorem.</li>
+      <li><b>Sole material -</b> lorem1</li>
+      <li><b>Lorem, ipsum. -</b> Lorem.</li>
+      <li><b>Lorem, ipsum. -</b> Lorem.</li>
+    </ul>
+</div>
+  </div>
+  </div>
+
+    <div class="product-image" id="product15">
+      <div class="shoe">
+        <div class="pro">
+    <img src="images/shoes5.webp" alt="product15">
+    <h3><u>Price &#8377 1,11,990</u></h3>
+        <h2><u>Giuseppe Zanotti</u></h2>
+        <h4>Multi Color High Top Leather Sneakers</h4>
+  </div>
+  <div class="imginfo">
+    <h4><u>Description</u>:-</h4>
+    <p>Elevate your look with these Multi Color High Top Leather Sneakers crafted in leather by Giuseppe Zanotti, featuring round toe, lace up closure and signature detailing on footbed.</p>
+    <h4><u>Product Details</u>:-</h4>
+    <ul>
+      <li><b>Material typePolyvinyl -</b> Chloride</li>
+      <li><b>Closure type -</b> Chloride</li>
+      <li><b>Heel type -</b> Lorem.</li>
+      <li><b>Water resistance level -</b> Lorem.</li>
+      <li><b>Sole material -</b> lorem1</li>
+      <li><b>Lorem, ipsum. -</b> Lorem.</li>
+      <li><b>Lorem, ipsum. -</b> Lorem.</li>
+    </ul>
+</div>
+  </div>
+  </div>
+    <!-- Add more product images as needed -->
+
+  </div>
+
+</div>
+
+<script>
+//   let obj={link1:"images/shoes1.webp",
+//  link2:"images/shoes2.webp",
+//  link3:"images/shoes3.webp",
+//  link4:"images/shoes4.webp",
+//  link5:"images/shoes5.webp",
+//  link6:"images/clothes1.webp",
+//  link7:"images/clothes2.webp",
+// }
+  // Function to show the selected product image
+  function showProduct(productId) {
+    // Hide all product images
+    var productImages = document.getElementsByClassName('product-image');
+    for (var i = 0; i < productImages.length; i++) {
+      productImages[i].style.display = 'none';
+    }
+    
+    // Show the selected product image
+    var selectedProduct = document.getElementById('product' + productId);
+    if (selectedProduct) {
+      selectedProduct.style.display = 'block';
+    }
+  }
+
+</script>
+
+</body>
+</html>
